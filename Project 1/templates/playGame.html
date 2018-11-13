@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+<font size="6">Random Word :   {{the_randomWord}}</font>
+
+
+
+<form action='/processwords' method='post'>
+        <input type='text' required autofocus size=100 name='seven_words'>
+        <p>
+        <input type='submit' value='GO!'>
+        </p>
+        </form>
+{% endblock %}  

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+{{the_name}}
+
+
+        <ol>    
+                <li>Each word is only made up from the letters contained within the sourceword.
+                <li>Each word exists within the dictionary (i.e., it's a “real” word).
+                <li>The words all have three letters or more.
+                <li>There are no duplicate words.
+                <li>None of the seven words is the source word. 
+                <li>And don't forget: case is NOT significiant (Pet, PET, and pet are the *same* word).
+        </ol>
+
+        <a href='/startgame'><button>Let's play!</button></a>
+{% endblock %}  
